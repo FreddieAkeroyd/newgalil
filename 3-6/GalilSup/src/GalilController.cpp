@@ -368,7 +368,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <signal.h>
-#if defined _WIN32 || _WIN64
+#if defined(_WIN32) /* _WIN32 also defined on x64 */
 #include <process.h>
 #else
 #include <unistd.h>

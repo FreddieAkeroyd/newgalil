@@ -20,11 +20,11 @@
 #ifndef GalilController_H
 #define GalilController_H
 
-#if defined _WIN32 || _WIN64
+#if defined(_WIN32) /* _WIN32 also defined on x64 */
 #define rint(x) floor((x)+0.5)
 #define lrint(x) floor((x)+0.5)
 #define finite(x) _finite(x)
-#endif /* _WIN32/_WIN64 */
+#endif /* _WIN32 */
 
 #define BEGIN_TIMEOUT 0.5
 #define AASCII 65

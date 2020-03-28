@@ -21,7 +21,7 @@
 #include <math.h>
 #include <string.h>
 #include <stdlib.h>
-#if defined _WIN32 || _WIN64
+#if defined(_WIN32) /* _WIN32 also defined on x64 */
 #include <windows.h>
 #endif /* _WIN32 */
 #include <iostream>  //cout
